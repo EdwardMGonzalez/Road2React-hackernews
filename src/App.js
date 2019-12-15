@@ -26,7 +26,9 @@ class App extends Component {
 		const helloWorld = 'Hey, Welcome to the Road to learn React';
 		return (
 			<div className="App">
-			 <h2>{helloWorld}</h2>
+			 {list.map(function(item) {
+				 return <div>{item.title}</div>;
+			 })}
 			</div>
 		);
 	}
