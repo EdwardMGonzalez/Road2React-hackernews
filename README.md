@@ -14,6 +14,27 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
+**Ed Note!**
+After installing node via homebrew and boostrapping the app using create-react-App
+tests would fail with the following error and some other stuff.
+
+```
+TypeError: fsevents is not a function
+````
+
+After installing *watchman* via homebrew, tests ran as expected.
+
+System notes:
+```
+$ create-react-app --version
+3.3.0
+$ node --version
+v10.15.0
+$ npm --version
+6.4.1
+```
+**End Note**
+
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
