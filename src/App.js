@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
 const list = [
@@ -27,22 +27,34 @@ class App extends Component {
 
 		this.state = {
 			list,
+			searchTerm: '',
 		};
 
 		this.onDismiss = this.onDismiss.bind(this);
+		this.onSearchChange = this.onSearchChange.bind(this);
+		this.isSearched = this.isSearched.bind(this);
 	}
 
 	onDismiss(id) {
 		const isNotId = item => item.objectId !== id;
 		const updatedList = this.state.list.filter(isNotId);
 		this.setState({ list: updatedList });
-		console.log(this);
 	}
+
+	onSearchChange(event) {
+		this.setState({ searchTerm: event.target.value });
+	}
+
+	isSearched = searchTerm => item => item.title.toLowerCase().includes(searchTerm.toLowerCase());
 
 	render() {
 		return (
 			<div className="App">
-			{this.state.list.map( item =>
+				<form>
+					<input type="text"
+					onChange={this.onSearchChange}/>
+				</form>
+				{this.state.list.filter(this.isSearched(this.state.searchTerm)).map( item =>
 				<div key={item.objectId}>
 				 	<span>
 						<a href={item.url}>{item.title}</a>
