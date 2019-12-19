@@ -48,13 +48,14 @@ class App extends Component {
 	isSearched = searchTerm => item => item.title.toLowerCase().includes(searchTerm.toLowerCase());
 
 	render() {
+		const {searchTerm, list} = this.state;
 		return (
 			<div className="App">
 				<form>
 					<input type="text"
 					onChange={this.onSearchChange}/>
 				</form>
-				{this.state.list.filter(this.isSearched(this.state.searchTerm)).map( item =>
+				{list.filter(this.isSearched(this.state.searchTerm)).map( item =>
 				<div key={item.objectId}>
 				 	<span>
 						<a href={item.url}>{item.title}</a>
