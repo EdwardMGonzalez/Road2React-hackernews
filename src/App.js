@@ -21,6 +21,8 @@ const list = [
 	},
 ];
 
+const isSearched = searchTerm => item => item.title.toLowerCase().includes(searchTerm.toLowerCase());
+
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -32,7 +34,6 @@ class App extends Component {
 
 		this.onDismiss = this.onDismiss.bind(this);
 		this.onSearchChange = this.onSearchChange.bind(this);
-		this.isSearched = this.isSearched.bind(this);
 	}
 
 	onDismiss(id) {
@@ -45,36 +46,60 @@ class App extends Component {
 		this.setState({ searchTerm: event.target.value });
 	}
 
-	isSearched = searchTerm => item => item.title.toLowerCase().includes(searchTerm.toLowerCase());
-
 	render() {
 		const {searchTerm, list} = this.state;
 		return (
-			<div className="App">
-				<form>
-					<input type="text"
-					onChange={this.onSearchChange}
-					value={searchTerm}
-					/>
-				</form>
-				{list.filter(this.isSearched(this.state.searchTerm)).map( item =>
-				<div key={item.objectId}>
-				 	<span>
-						<a href={item.url}>{item.title}</a>
+			<div className = "App">
+				<Search
+					value = { searchTerm }
+					onChange = { this.onSearchChange } />
+				<Table
+					list = { list }
+					pattern = { searchTerm }
+					onDismiss = { this.onDismiss } />
+			</div>
+		);
+	}
+}
+
+class Search extends Component {
+	render() {
+		const { value, onChange } = this.props;
+		return (
+			<form>
+				<input type = "text"
+				onChange = {onChange}
+				value = {value}
+				/>
+			</form>
+		);
+	}
+}
+
+class Table extends Component {
+
+	render () {
+		const { list, pattern, onDismiss } = this.props;
+		return(
+			<div>
+			{ list.filter(isSearched(pattern)).map( item =>
+				<div key = {item.objectId}>
+					<span>
+						<a href = {item.url}>{item.title}</a>
 					</span>
 					<span>{item.author}</span>
 					<span>{item.num_comments}</span>
 					<span>{item.points}</span>
 					<span>
 						<button
-							onClick={() => this.onDismiss(item.objectId)}
-							type="button"
+							onClick = { () => onDismiss(item.objectId) }
+							type = "button"
 						>
 							Dismiss
 						</button>
 					</span>
 				</div>
-			)}
+			)};
 			</div>
 		);
 	}
