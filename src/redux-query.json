@@ -1,0 +1,921 @@
+{
+  "hits": [
+    {
+      "created_at": "2015-07-15T21:37:09.000Z",
+      "title": "Potato paradox",
+      "url": "https://en.wikipedia.org/wiki/Potato_paradox",
+      "author": "Panoramix",
+      "points": 559,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 132,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1436996229,
+      "relevancy_score": 6143,
+      "_tags": [
+        "story",
+        "author_Panoramix",
+        "story_9894237"
+      ],
+      "objectID": "9894237",
+      "_highlightResult": {
+        "title": {
+          "value": "<em>Potato</em> paradox",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "https://en.wikipedia.org/wiki/<em>Potato</em>_paradox",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "Panoramix",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2018-08-05T17:40:44.000Z",
+      "title": "Algorithm recovers speech from a potato-chip bag filmed through glass (2014)",
+      "url": "http://news.mit.edu/2014/algorithm-recovers-speech-from-vibrations-0804",
+      "author": "MrJagil",
+      "points": 327,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 109,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1533490844,
+      "relevancy_score": 8280,
+      "_tags": [
+        "story",
+        "author_MrJagil",
+        "story_17692447"
+      ],
+      "objectID": "17692447",
+      "_highlightResult": {
+        "title": {
+          "value": "Algorithm recovers speech from a <em>potato</em>-chip bag filmed through glass (2014)",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "http://news.mit.edu/2014/algorithm-recovers-speech-from-vibrations-0804",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "MrJagil",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2018-08-12T12:15:32.000Z",
+      "title": "Potato paradox",
+      "url": "https://en.wikipedia.org/wiki/Potato_paradox",
+      "author": "ZeljkoS",
+      "points": 232,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 77,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1534076132,
+      "relevancy_score": 8293,
+      "_tags": [
+        "story",
+        "author_ZeljkoS",
+        "story_17744020"
+      ],
+      "objectID": "17744020",
+      "_highlightResult": {
+        "title": {
+          "value": "<em>Potato</em> paradox",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "https://en.wikipedia.org/wiki/<em>Potato</em>_paradox",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "ZeljkoS",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-03-08T20:05:56.000Z",
+      "title": "Study: Potatoes can grow on Mars",
+      "url": "http://www.upi.com/Science_News/2017/03/08/Study-Potatoes-can-grow-on-Mars/7961488992637/",
+      "author": "Mz",
+      "points": 230,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 139,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1489003556,
+      "relevancy_score": 7298,
+      "_tags": [
+        "story",
+        "author_Mz",
+        "story_13823275"
+      ],
+      "objectID": "13823275",
+      "_highlightResult": {
+        "title": {
+          "value": "Study: <em>Potato</em>es can grow on Mars",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "http://www.upi.com/Science_News/2017/03/08/Study-<em>Potato</em>es-can-grow-on-Mars/7961488992637/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "Mz",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2010-05-28T14:09:23.000Z",
+      "title": "Opera browser is much faster than a potato",
+      "url": "http://www.youtube.com/watch?v=zaT7thTxyq8",
+      "author": "jrnkntl",
+      "points": 226,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 45,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1275055763,
+      "relevancy_score": 2540,
+      "_tags": [
+        "story",
+        "author_jrnkntl",
+        "story_1386434"
+      ],
+      "objectID": "1386434",
+      "_highlightResult": {
+        "title": {
+          "value": "Opera browser is much faster than a <em>potato</em>",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "http://www.youtube.com/watch?v=zaT7thTxyq8",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "jrnkntl",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": {
+          "value": "",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2012-05-02T19:56:31.000Z",
+      "title": "The guy who made it so difficult to open your bag of potato chips ",
+      "url": "http://www.rheothing.com/2012/05/im-that-guy.html",
+      "author": "jmjerlecki",
+      "points": 158,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 91,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1335988591,
+      "relevancy_score": 3898,
+      "_tags": [
+        "story",
+        "author_jmjerlecki",
+        "story_3920825"
+      ],
+      "objectID": "3920825",
+      "_highlightResult": {
+        "title": {
+          "value": "The guy who made it so difficult to open your bag of <em>potato</em> chips ",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "http://www.rheothing.com/2012/05/im-that-guy.html",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "jmjerlecki",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": {
+          "value": "",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2019-10-19T23:03:00.000Z",
+      "title": "Potatos are as effective as carbohydrate gels for prolonged cycling performance",
+      "url": "https://www.physiology.org/doi/abs/10.1152/japplphysiol.00567.2019",
+      "author": "bookofjoe",
+      "points": 141,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 91,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1571526180,
+      "_tags": [
+        "story",
+        "author_bookofjoe",
+        "story_21301254"
+      ],
+      "objectID": "21301254",
+      "_highlightResult": {
+        "title": {
+          "value": "<em>Potato</em>s are as effective as carbohydrate gels for prolonged cycling performance",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "https://www.physiology.org/doi/abs/10.1152/japplphysiol.00567.2019",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "bookofjoe",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2016-04-13T22:25:56.000Z",
+      "title": "NASA Is Trying to Grow Potatoes on Mars",
+      "url": "http://www.wsj.com/articles/nasa-really-is-trying-to-grow-potatoes-on-mars-1460560325",
+      "author": "T-A",
+      "points": 132,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 65,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1460586356,
+      "relevancy_score": 6666,
+      "_tags": [
+        "story",
+        "author_T-A",
+        "story_11492842"
+      ],
+      "objectID": "11492842",
+      "_highlightResult": {
+        "title": {
+          "value": "NASA Is Trying to Grow <em>Potato</em>es on Mars",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "http://www.wsj.com/articles/nasa-really-is-trying-to-grow-<em>potato</em>es-on-mars-1460560325",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "T-A",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-04-15T12:51:36.000Z",
+      "title": "The Great Japan Potato-Chip Crisis",
+      "url": "https://www.bloomberg.com/news/articles/2017-04-14/the-great-japan-potato-chip-crisis-panic-buying-12-bags",
+      "author": "vezycash",
+      "points": 115,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 151,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1492260696,
+      "relevancy_score": 7365,
+      "_tags": [
+        "story",
+        "author_vezycash",
+        "story_14120529"
+      ],
+      "objectID": "14120529",
+      "_highlightResult": {
+        "title": {
+          "value": "The Great Japan <em>Potato</em>-Chip Crisis",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "https://www.bloomberg.com/news/articles/2017-04-14/the-great-japan-<em>potato</em>-chip-crisis-panic-buying-12-bags",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "vezycash",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2019-04-25T16:51:24.000Z",
+      "title": "Potato farmers cry foul as PepsiCo sues them",
+      "url": "https://www.thehindu.com/business/Industry/potato-farmers-cry-foul-as-pepsico-sues-them/article26936480.ece?homepage=true",
+      "author": "nkkollaw",
+      "points": 106,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 67,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1556211084,
+      "relevancy_score": 8790,
+      "_tags": [
+        "story",
+        "author_nkkollaw",
+        "story_19750014"
+      ],
+      "objectID": "19750014",
+      "_highlightResult": {
+        "title": {
+          "value": "<em>Potato</em> farmers cry foul as PepsiCo sues them",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "https://www.thehindu.com/business/Industry/<em>potato</em>-farmers-cry-foul-as-pepsico-sues-them/article26936480.ece?homepage=true",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "nkkollaw",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2011-03-31T12:14:00.000Z",
+      "title": "Gravity satellite yields 'Potato Earth' view",
+      "url": "http://www.bbc.co.uk/news/science-environment-12911806",
+      "author": "JacobAldridge",
+      "points": 100,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 18,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1301573640,
+      "relevancy_score": 3132,
+      "_tags": [
+        "story",
+        "author_JacobAldridge",
+        "story_2391190"
+      ],
+      "objectID": "2391190",
+      "_highlightResult": {
+        "title": {
+          "value": "Gravity satellite yields '<em>Potato</em> Earth' view",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "http://www.bbc.co.uk/news/science-environment-12911806",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "JacobAldridge",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": {
+          "value": "",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2016-04-30T11:22:54.000Z",
+      "title": "The curse of the potato",
+      "url": "https://www.washingtonpost.com/news/wonk/wp/2016/04/25/the-secret-ancient-history-of-the-potato-that-could-change-the-story-of-civilization/",
+      "author": "miiiiiike",
+      "points": 92,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 43,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1462015374,
+      "relevancy_score": 6693,
+      "_tags": [
+        "story",
+        "author_miiiiiike",
+        "story_11601286"
+      ],
+      "objectID": "11601286",
+      "_highlightResult": {
+        "title": {
+          "value": "The curse of the <em>potato</em>",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "https://www.washingtonpost.com/news/wonk/wp/2016/04/25/the-secret-ancient-history-of-the-<em>potato</em>-that-could-change-the-story-of-civilization/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "miiiiiike",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2012-11-23T14:09:34.000Z",
+      "title": "Careers Start by Peeling Potatoes",
+      "url": "http://steveblank.com/2012/11/23/careers-start-by-peeling-potatoes/",
+      "author": "regnum",
+      "points": 74,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 3,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1353679774,
+      "relevancy_score": 4287,
+      "_tags": [
+        "story",
+        "author_regnum",
+        "story_4822229"
+      ],
+      "objectID": "4822229",
+      "_highlightResult": {
+        "title": {
+          "value": "Careers Start by Peeling <em>Potato</em>es",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "http://steveblank.com/2012/11/23/careers-start-by-peeling-<em>potato</em>es/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "regnum",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": {
+          "value": "",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2016-01-17T05:42:09.000Z",
+      "title": "Hot Potato – Windows Privilege Escalation",
+      "url": "http://foxglovesecurity.com/2016/01/16/hot-potato/",
+      "author": "mmastrac",
+      "points": 73,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 33,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1453009329,
+      "relevancy_score": 6492,
+      "_tags": [
+        "story",
+        "author_mmastrac",
+        "story_10918445"
+      ],
+      "objectID": "10918445",
+      "_highlightResult": {
+        "title": {
+          "value": "Hot <em>Potato</em> – Windows Privilege Escalation",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "http://foxglovesecurity.com/2016/01/16/hot-<em>potato</em>/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "mmastrac",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2010-05-05T16:10:21.000Z",
+      "title": "Potato gun, lightning, and sonic magic: Google Chrome Speed Tests",
+      "url": "http://chrome.blogspot.com/2010/05/potato-gun-lightning-and-sonic-magic.html",
+      "author": "spuz",
+      "points": 63,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 20,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1273075821,
+      "relevancy_score": 2500,
+      "_tags": [
+        "story",
+        "author_spuz",
+        "story_1321591"
+      ],
+      "objectID": "1321591",
+      "_highlightResult": {
+        "title": {
+          "value": "<em>Potato</em> gun, lightning, and sonic magic: Google Chrome Speed Tests",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "http://chrome.blogspot.com/2010/05/<em>potato</em>-gun-lightning-and-sonic-magic.html",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "spuz",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": {
+          "value": "",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2017-09-01T12:51:17.000Z",
+      "title": "The Nuclear Potato Cannon, Part 2 (2006)",
+      "url": "http://nfttu.blogspot.com/2006/01/nuclear-potato-cannon-part-2.html",
+      "author": "ajarmst",
+      "points": 57,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 58,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1504270277,
+      "relevancy_score": 7634,
+      "_tags": [
+        "story",
+        "author_ajarmst",
+        "story_15147914"
+      ],
+      "objectID": "15147914",
+      "_highlightResult": {
+        "title": {
+          "value": "The Nuclear <em>Potato</em> Cannon, Part 2 (2006)",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "http://nfttu.blogspot.com/2006/01/nuclear-<em>potato</em>-cannon-part-2.html",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "ajarmst",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2016-06-11T05:36:05.000Z",
+      "title": "Making an 18th-Century Potato Pudding",
+      "url": "http://blogs.brown.edu/jcbbooks/2016/06/07/making-an-18th-century-potato-pudding/",
+      "author": "benbreen",
+      "points": 57,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 13,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1465623365,
+      "relevancy_score": 6774,
+      "_tags": [
+        "story",
+        "author_benbreen",
+        "story_11882237"
+      ],
+      "objectID": "11882237",
+      "_highlightResult": {
+        "title": {
+          "value": "Making an 18th-Century <em>Potato</em> Pudding",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "http://blogs.brown.edu/jcbbooks/2016/06/07/making-an-18th-century-<em>potato</em>-pudding/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "benbreen",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2015-11-23T01:32:05.000Z",
+      "title": "Caltech Potato Chips (1996)",
+      "url": "http://www.async.caltech.edu/~mika/potato/potato.html",
+      "author": "ch",
+      "points": 46,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 18,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1448242325,
+      "relevancy_score": 6397,
+      "_tags": [
+        "story",
+        "author_ch",
+        "story_10612358"
+      ],
+      "objectID": "10612358",
+      "_highlightResult": {
+        "title": {
+          "value": "Caltech <em>Potato</em> Chips (1996)",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "http://www.async.caltech.edu/~mika/<em>potato</em>/<em>potato</em>.html",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "ch",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2019-01-15T14:20:41.000Z",
+      "title": "Screens might be as bad for mental health as potatoes",
+      "url": "https://www.wired.com/story/screens-might-be-as-bad-for-mental-health-as-potatoes/",
+      "author": "dhh2106",
+      "points": 44,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 21,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1547562041,
+      "relevancy_score": 8602,
+      "_tags": [
+        "story",
+        "author_dhh2106",
+        "story_18911240"
+      ],
+      "objectID": "18911240",
+      "_highlightResult": {
+        "title": {
+          "value": "Screens might be as bad for mental health as <em>potato</em>es",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "https://www.wired.com/story/screens-might-be-as-bad-for-mental-health-as-<em>potato</em>es/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "dhh2106",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2018-04-14T20:45:50.000Z",
+      "title": "All by Itself, the Humble Sweet Potato Colonized the World: Study",
+      "url": "https://www.nytimes.com/2018/04/12/science/sweet-potato-pacific-dna.html",
+      "author": "onuralp",
+      "points": 41,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 4,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1523738750,
+      "relevancy_score": 8064,
+      "_tags": [
+        "story",
+        "author_onuralp",
+        "story_16839388"
+      ],
+      "objectID": "16839388",
+      "_highlightResult": {
+        "title": {
+          "value": "All by Itself, the Humble Sweet <em>Potato</em> Colonized the World: Study",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "url": {
+          "value": "https://www.nytimes.com/2018/04/12/science/sweet-<em>potato</em>-pacific-dna.html",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "potato"
+          ]
+        },
+        "author": {
+          "value": "onuralp",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    }
+  ],
+  "nbHits": 13194,
+  "page": 0,
+  "nbPages": 50,
+  "hitsPerPage": 20,
+  "exhaustiveNbHits": false,
+  "query": "potato",
+  "params": "advancedSyntax=true&analytics=true&analyticsTags=backend&query=potato",
+  "processingTimeMS": 1
+}
