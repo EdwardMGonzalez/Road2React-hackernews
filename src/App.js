@@ -59,7 +59,6 @@ class App extends Component {
 
     return (
       <div className="page">
-	  	<FileInput />
         <div className="interactions">
           <Search value={searchTerm} onChange={this.onSearchChange}>
             Search
@@ -110,32 +109,5 @@ const Button = ({ onClick, className = "", children }) => (
   </button>
 );
 
-class FileInput extends React.Component {
-  constructor(props) {
-    super(props);
-    this.uploadFile = this.uploadFile.bind(this);
-  }
-
-  uploadFile(event) {
-    const file = event.target.files[0];
-    console.log(file);
-
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = e => {
-        console.log(e.target.result);
-      };
-      console.log(reader.readAsText(file));
-    }
-  }
-
-  render() {
-    return (
-      <span>
-        <input type="file" name="myFile" onChange={this.uploadFile} />
-      </span>
-    );
-  }
-}
 
 export default App;
