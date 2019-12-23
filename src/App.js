@@ -3,7 +3,7 @@ import "./App.css";
 import PropTypes from "prop-types";
 
 const PATH_BASE = "https://hn.algolia.com/api/v1";
-const PATH_SEARCH = "/search";
+const PATH_SEARCH = "/search_by_date";
 const PARAM_SEARCH = "query=";
 const PARAM_PAGE = "page=";
 
@@ -13,7 +13,8 @@ class App extends Component {
 
     this.state = {
       result: null,
-      searchTerm: ""
+      searchTerm: "",
+      error: null
     };
 
     this.setSearchTopStories = this.setSearchTopStories.bind(this);
@@ -53,21 +54,25 @@ class App extends Component {
   }
 
   fetchSearchTopStories(searchTerm, page = 0) {
-    console.log("search term:");
-    console.log(searchTerm);
+    console.log("search term: ${searchTerm}");
     fetch(
       `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}`
     )
       .then(response => response.json())
       .then(result => this.setSearchTopStories(result))
-      .catch(error => error);
+      .catch(error => this.setState( {error}));
   }
 
   render() {
-    const { searchTerm, result } = this.state;
+    const { searchTerm, result, error } = this.state;
     const page = (result && result.page) || 0;
     if (!result) {
       return null;
+    }
+
+    if(error) {
+      console.log(error);
+      return ( <div>Something went wrong</div> );
     }
 
     return (
@@ -127,7 +132,7 @@ const Table = ({ list, pattern, onDismiss }) => (
     {list.map(item => (
       <div key={item.objectID} className="table-row">
         <span className="title">
-          <a href={item.url}>{item.title}</a>
+          <a href={item.story_url}>{item.story_title}</a>
         </span>
         <span className="author">{item.author}</span>
         <span className="num_comments">{item.num_comments}</span>
@@ -160,7 +165,7 @@ const Button = ({ onClick, className = "", children }) => (
 Button.propTypes = {
   onClick: PropTypes.func.isRequired,
   className: PropTypes.string,
-  children: PropTypes.string
+  children: PropTypes.any
 };
 
 export default App;
