@@ -9,6 +9,8 @@ const PARAM_SEARCH = "query=";
 const PARAM_PAGE = "page=";
 
 class App extends Component {
+  __isMounted = false;
+
   constructor(props) {
     super(props);
 
@@ -26,12 +28,19 @@ class App extends Component {
   }
 
   setSearchTopStories(result) {
-    this.setState({ result });
+    if (this.__isMounted) {
+      this.setState({ result });
+    }
   }
 
   componentDidMount() {
+    this.__isMounted = true;
     const { searchTerm } = this.state;
     this.fetchSearchTopStories(searchTerm);
+  }
+
+  componentWillUnmount() {
+    this.__isMounted = false;
   }
 
   onDismiss(id) {
