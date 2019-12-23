@@ -64,8 +64,10 @@ describe("Button", () => {
   });
 });
 
-const storyTitle = "Algorithm recovers speech from a potato-chip bag filmed through glass (2014)";
-const storyUrl = "http://news.mit.edu/2014/algorithm-recovers-speech-from-vibrations-0804";
+const storyTitle =
+  "Algorithm recovers speech from a potato-chip bag filmed through glass (2014)";
+const storyUrl =
+  "http://news.mit.edu/2014/algorithm-recovers-speech-from-vibrations-0804";
 const title = "Potato paradox";
 const url = "https://en.wikipedia.org/wiki/Potato_paradox";
 const tableProps = {
@@ -114,14 +116,25 @@ describe("Table", () => {
     expect(element.find(".table-row").length).toBe(2);
   });
 
+  it("uses objectID for row Ids", () => {
+    const element = shallow(<Table {...tableProps} />);
+    expect(element.find("#row-17692447").length).toBe(1);
+    expect(element.find("#row-9894237").length).toBe(1);
+  });
+
   it("shows title based on item.story_title and uses item.story_url", () => {
     const element = shallow(<Table {...tableProps} />);
-    expect(element.containsMatchingElement(<a href={storyUrl}>{storyTitle}</a>)).toEqual(true);
+    const row = element.find("#row-17692447");
+    expect(
+      row.containsMatchingElement(<a href={storyUrl}>{storyTitle}</a>)
+    ).toEqual(true);
   });
 
   it("shows title based on item.title and uses item.url", () => {
     const element = shallow(<Table {...tableProps} />);
-    expect(element.containsMatchingElement(<a href={url}>{title}</a>)).toEqual(true);
+    const row = element.find("#row-9894237");
+    expect(row.containsMatchingElement(<a href={url}>{title}</a>)).toEqual(
+      true
+    );
   });
-
 });

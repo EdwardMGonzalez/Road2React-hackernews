@@ -61,7 +61,7 @@ exports[`Table has a valid snapshot 1`] = `
 >
   <div
     className="table-row"
-    id="9894237"
+    id="row-9894237"
   >
     <span
       className="title"
@@ -99,7 +99,7 @@ exports[`Table has a valid snapshot 1`] = `
   </div>
   <div
     className="table-row"
-    id="17692447"
+    id="row-17692447"
   >
     <span
       className="title"
