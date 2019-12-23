@@ -54,26 +54,18 @@ class App extends Component {
   }
 
   fetchSearchTopStories(searchTerm, page = 0) {
-    console.log("search term: ${searchTerm}");
     fetch(
       `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}`
     )
       .then(response => response.json())
       .then(result => this.setSearchTopStories(result))
-      .catch(error => this.setState( {error}));
+      .catch(error => this.setState({ error }));
   }
 
   render() {
     const { searchTerm, result, error } = this.state;
     const page = (result && result.page) || 0;
-    if (!result) {
-      return null;
-    }
-
-    if(error) {
-      console.log(error);
-      return ( <div>Something went wrong</div> );
-    }
+    console.log(error);
 
     return (
       <div className="page">
@@ -85,27 +77,26 @@ class App extends Component {
           >
             Search
           </Search>
+          {error ? <p>Something went wrong.</p> : null}
           {result ? (
-            <Table
-              list={result.hits}
-              pattern={searchTerm}
-              onDismiss={this.onDismiss}
-            />
-          ) : null}
-          {result.page > 0 ? (
-            <Button
-              onClick={() => this.fetchSearchTopStories(searchTerm, page - 1)}
-            >
-              {result.page}
-            </Button>
-          ) : null}
-          {page + 1}
-          {result.page < result.nbPages - 1 ? (
-            <Button
-              onClick={() => this.fetchSearchTopStories(searchTerm, page + 1)}
-            >
-              {result.page + 2}
-            </Button>
+            <div>
+              <Table
+                list={result.hits}
+                pattern={searchTerm}
+                onDismiss={this.onDismiss}
+              />
+              <Button
+                onClick={() => this.fetchSearchTopStories(searchTerm, page - 1)}
+              >
+                {result.page}
+              </Button>
+              {page + 1}
+              <Button
+                onClick={() => this.fetchSearchTopStories(searchTerm, page + 1)}
+              >
+                {result.page + 2}
+              </Button>
+            </div>
           ) : null}
         </div>
       </div>
