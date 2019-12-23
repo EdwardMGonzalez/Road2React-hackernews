@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-
-const DEFAULT_QUERY = "redux";
+import PropTypes from "prop-types";
 
 const PATH_BASE = "https://hn.algolia.com/api/v1";
 const PATH_SEARCH = "/search";
@@ -13,25 +12,25 @@ class App extends Component {
 
     this.state = {
       result: null,
-      searchTerm: DEFAULT_QUERY
+      searchTerm: ""
     };
 
     this.setSearchTopStories = this.setSearchTopStories.bind(this);
     this.onDismiss = this.onDismiss.bind(this);
     this.onSearchChange = this.onSearchChange.bind(this);
+    this.onSearchSubmit = this.onSearchSubmit.bind(this);
+    this.fetchSearchTopStories = this.fetchSearchTopStories.bind(this);
   }
 
   setSearchTopStories(result) {
     this.setState({ result });
+    console.log("result:");
+    console.log(result);
   }
 
   componentDidMount() {
     const { searchTerm } = this.state;
-
- 		fetch(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}`)
-        .then(response => response.json())
-        .then(result => this.setSearchTopStories(result))
-        .catch(error => error);
+    this.fetchSearchTopStories(searchTerm);
   }
 
   onDismiss(id) {
@@ -46,6 +45,21 @@ class App extends Component {
     this.setState({ searchTerm: event.target.value });
   }
 
+  onSearchSubmit(event) {
+    const { searchTerm } = this.state;
+    this.fetchSearchTopStories(searchTerm);
+    event.preventDefault();
+  }
+
+  fetchSearchTopStories(searchTerm) {
+    console.log("search term:");
+    console.log(searchTerm);
+    fetch(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}`)
+      .then(response => response.json())
+      .then(result => this.setSearchTopStories(result))
+      .catch(error => error);
+  }
+
   render() {
     const { searchTerm, result } = this.state;
 
@@ -56,25 +70,39 @@ class App extends Component {
     return (
       <div className="page">
         <div className="interactions">
-          <Search value={searchTerm} onChange={this.onSearchChange}>
+          <Search
+            value={searchTerm}
+            onChange={this.onSearchChange}
+            onSubmit={this.onSearchSubmit}
+          >
             Search
           </Search>
-          <Table
-            list={result.hits}
-            pattern={searchTerm}
-            onDismiss={this.onDismiss}
-          />
+          {result ? (
+            <Table
+              list={result.hits}
+              pattern={searchTerm}
+              onDismiss={this.onDismiss}
+            />
+          ) : null}
         </div>
       </div>
     );
   }
 }
 
-const Search = ({ value, onChange, children }) => (
-  <form>
-    {children} <input type="text" onChange={onChange} value={value} />
+const Search = ({ value, onChange, onSubmit, children }) => (
+  <form onSubmit={onSubmit}>
+    <input type="text" onChange={onChange} value={value} />
+    <button type="submit">{children}</button>
   </form>
 );
+
+Search.propTypes = {
+  value: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+  children: PropTypes.string
+};
 
 const Table = ({ list, pattern, onDismiss }) => (
   <div className="table">
@@ -99,11 +127,22 @@ const Table = ({ list, pattern, onDismiss }) => (
   </div>
 );
 
+Table.propTypes = {
+  list: PropTypes.array.isRequired,
+  pattern: PropTypes.string,
+  onDismiss: PropTypes.func.isRequired
+};
+
 const Button = ({ onClick, className = "", children }) => (
   <button onClick={onClick} className={className} type="button">
     {children}
   </button>
 );
 
+Button.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  className: PropTypes.string,
+  children: PropTypes.string
+};
 
 export default App;
