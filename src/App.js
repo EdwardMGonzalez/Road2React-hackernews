@@ -92,22 +92,49 @@ class App extends Component {
           {isLoading ? <Loading /> : null }
           {result && !isLoading ? (
             <div>
+              <p>
+                page {result.page + 1} of {result.nbPages}
+              </p>
               <Table
                 list={result.hits}
                 pattern={searchTerm}
                 onDismiss={this.onDismiss}
               />
+              {result.page > 1 ? (
+                <span>
+                <Button
+                  onClick={() => this.fetchSearchTopStories(searchTerm, 0)}
+                >
+                  1
+                </Button>
+                ...
+                </span>
+              ) : null }
+              { result.page > 0 ?
               <Button
                 onClick={() => this.fetchSearchTopStories(searchTerm, page - 1)}
               >
-                {result.page}
+                &lt;
               </Button>
+              : null }
               {page + 1}
+              {(result.page < result.nbPages - 1) ?
               <Button
                 onClick={() => this.fetchSearchTopStories(searchTerm, page + 1)}
               >
-                {result.page + 2}
+                &gt;
               </Button>
+              : null }
+              {(result.nbPages > 3) && (result.page < result.nbPages - 1) ? (
+                <span>
+                ...
+                <Button
+                  onClick={() => this.fetchSearchTopStories(searchTerm, result.nbPages - 1)}
+                >
+                  {result.nbPages - 1}
+                </Button>
+                </span>
+              ) : null }
             </div>
           ) : null}
         </div>
