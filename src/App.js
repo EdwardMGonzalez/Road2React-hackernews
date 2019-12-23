@@ -17,6 +17,7 @@ class App extends Component {
     this.state = {
       result: null,
       searchTerm: "",
+      isLoading: true,
       error: null
     };
 
@@ -31,6 +32,7 @@ class App extends Component {
     if (this.__isMounted) {
       this.setState({ result });
     }
+    this.setState( {isLoading:false} );
   }
 
   componentDidMount() {
@@ -62,6 +64,7 @@ class App extends Component {
   }
 
   fetchSearchTopStories(searchTerm, page = 0) {
+    this.setState( {isLoading:true} );
     axios
       .get(
         `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}`
@@ -71,7 +74,7 @@ class App extends Component {
   }
 
   render() {
-    const { searchTerm, result, error } = this.state;
+    const { searchTerm, result, error, isLoading } = this.state;
     const page = (result && result.page) || 0;
 
     return (
@@ -86,7 +89,8 @@ class App extends Component {
             Search
           </Search>
           {error ? <p>Something went wrong.</p> : null}
-          {result ? (
+          {isLoading ? <Loading /> : null }
+          {result && !isLoading ? (
             <div>
               <Table
                 list={result.hits}
@@ -111,13 +115,28 @@ class App extends Component {
     );
   }
 }
+class Search extends Component {
+  componentDidMount() {
+      if(this.input) {
+        this.input.focus();
+      }
+  }
 
-const Search = ({ value, onChange, onSubmit, children }) => (
-  <form onSubmit={onSubmit}>
-    <input type="text" onChange={onChange} value={value} />
-    <button type="submit">{children}</button>
-  </form>
-);
+  render() {
+    const { onSubmit, onChange, value, children } = this.props;
+    return (
+      <form onSubmit={onSubmit}>
+        <input
+          type="text"
+          onChange={onChange}
+          value={value}
+          ref={el => (this.input = el)}
+        />
+        <button type="submit">{children}</button>
+      </form>
+    );
+  }
+}
 
 Search.propTypes = {
   value: PropTypes.string,
@@ -172,6 +191,10 @@ Button.propTypes = {
   className: PropTypes.string,
   children: PropTypes.any
 };
+
+const Loading = () => (
+  <div>Loading...</div>
+);
 
 export default App;
 
