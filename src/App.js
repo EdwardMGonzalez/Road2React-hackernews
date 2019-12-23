@@ -31,8 +31,8 @@ class App extends Component {
   setSearchTopStories(result) {
     if (this.__isMounted) {
       this.setState({ result });
+      this.setState( {isLoading:false} );
     }
-    this.setState( {isLoading:false} );
   }
 
   componentDidMount() {
