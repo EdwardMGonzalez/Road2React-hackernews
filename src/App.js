@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import PropTypes from "prop-types";
+import axios from "axios";
 
 const PATH_BASE = "https://hn.algolia.com/api/v1";
 const PATH_SEARCH = "/search_by_date";
@@ -54,11 +55,11 @@ class App extends Component {
   }
 
   fetchSearchTopStories(searchTerm, page = 0) {
-    fetch(
-      `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}`
-    )
-      .then(response => response.json())
-      .then(result => this.setSearchTopStories(result))
+    axios
+      .get(
+        `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}`
+      )
+      .then(result => this.setSearchTopStories(result.data))
       .catch(error => this.setState({ error }));
   }
 
