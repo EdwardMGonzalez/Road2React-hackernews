@@ -76,6 +76,7 @@ class App extends Component {
 
     return (
       <div className="page">
+        <h1>Keyword Search</h1>
         <div className="interactions">
           <Search
             value={searchTerm}
