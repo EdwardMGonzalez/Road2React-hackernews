@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 const PATH_BASE = "https://hn.algolia.com/api/v1";
 const PATH_SEARCH = "/search";
 const PARAM_SEARCH = "query=";
+const PARAM_PAGE = "page=";
 
 class App extends Component {
   constructor(props) {
@@ -51,10 +52,12 @@ class App extends Component {
     event.preventDefault();
   }
 
-  fetchSearchTopStories(searchTerm) {
+  fetchSearchTopStories(searchTerm, page = 0) {
     console.log("search term:");
     console.log(searchTerm);
-    fetch(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}`)
+    fetch(
+      `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}`
+    )
       .then(response => response.json())
       .then(result => this.setSearchTopStories(result))
       .catch(error => error);
@@ -62,7 +65,7 @@ class App extends Component {
 
   render() {
     const { searchTerm, result } = this.state;
-
+    const page = (result && result.page) || 0;
     if (!result) {
       return null;
     }
@@ -83,6 +86,21 @@ class App extends Component {
               pattern={searchTerm}
               onDismiss={this.onDismiss}
             />
+          ) : null}
+          {result.page > 0 ? (
+            <Button
+              onClick={() => this.fetchSearchTopStories(searchTerm, page - 1)}
+            >
+              {result.page}
+            </Button>
+          ) : null}
+          {page + 1}
+          {result.page < result.nbPages - 1 ? (
+            <Button
+              onClick={() => this.fetchSearchTopStories(searchTerm, page + 1)}
+            >
+              {result.page + 2}
+            </Button>
           ) : null}
         </div>
       </div>
