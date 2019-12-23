@@ -92,49 +92,25 @@ class App extends Component {
           {isLoading ? <Loading /> : null }
           {result && !isLoading ? (
             <div>
-              <p>
-                page {result.page + 1} of {result.nbPages}
-              </p>
+              <Pagination
+                page={result.page}
+                maxPage={result.nbPages}
+                searchTerm={searchTerm}
+                goBack={() => this.fetchSearchTopStories(searchTerm, page - 1)}
+                goForward={() => this.fetchSearchTopStories(searchTerm, page + 1)}
+              />
               <Table
                 list={result.hits}
                 pattern={searchTerm}
                 onDismiss={this.onDismiss}
               />
-              {result.page > 1 ? (
-                <span>
-                <Button
-                  onClick={() => this.fetchSearchTopStories(searchTerm, 0)}
-                >
-                  1
-                </Button>
-                ...
-                </span>
-              ) : null }
-              { result.page > 0 ?
-              <Button
-                onClick={() => this.fetchSearchTopStories(searchTerm, page - 1)}
-              >
-                &lt;
-              </Button>
-              : null }
-              {page + 1}
-              {(result.page < result.nbPages - 1) ?
-              <Button
-                onClick={() => this.fetchSearchTopStories(searchTerm, page + 1)}
-              >
-                &gt;
-              </Button>
-              : null }
-              {(result.nbPages > 3) && (result.page < result.nbPages - 1) ? (
-                <span>
-                ...
-                <Button
-                  onClick={() => this.fetchSearchTopStories(searchTerm, result.nbPages - 1)}
-                >
-                  {result.nbPages - 1}
-                </Button>
-                </span>
-              ) : null }
+              <Pagination
+                page={result.page}
+                maxPage={result.nbPages}
+                searchTerm={searchTerm}
+                goBack={() => this.fetchSearchTopStories(searchTerm, page - 1)}
+                goForward={() => this.fetchSearchTopStories(searchTerm, page + 1)}
+              />
             </div>
           ) : null}
         </div>
@@ -221,6 +197,26 @@ Button.propTypes = {
 
 const Loading = () => (
   <div>Loading...</div>
+);
+
+const Pagination = ( {page = 0, maxPage, goBack, goForward} ) => (
+  <div>
+    <span>
+      {page !== 0
+        ?
+        <Button  onClick={goBack} >
+          &lt;
+        </Button>
+      : null }
+      {page + 1} of {maxPage}
+      { page !== maxPage - 1
+        ?
+        <Button  onClick={goForward} >
+          &gt;
+        </Button>
+        : null }
+    </span>
+  </div>
 );
 
 export default App;
