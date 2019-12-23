@@ -131,7 +131,7 @@ const Table = ({ list, pattern, onDismiss }) => (
     {list.map(item => (
       <div key={item.objectID} className="table-row" id={item.objectID}>
         <span className="title">
-          <a href={item.story_url}>{item.story_title}</a>
+          <a href={item.story_url}>{item.story_title ? item.story_title : item.title}</a>
         </span>
         <span className="author">{item.author}</span>
         <span className="num_comments">{item.num_comments}</span>
