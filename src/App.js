@@ -27,8 +27,6 @@ class App extends Component {
 
   setSearchTopStories(result) {
     this.setState({ result });
-    console.log("result:");
-    console.log(result);
   }
 
   componentDidMount() {
@@ -66,7 +64,6 @@ class App extends Component {
   render() {
     const { searchTerm, result, error } = this.state;
     const page = (result && result.page) || 0;
-    console.log(error);
 
     return (
       <div className="page">
@@ -161,3 +158,5 @@ Button.propTypes = {
 };
 
 export default App;
+
+export { Button, Search, Table };
