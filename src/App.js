@@ -129,7 +129,7 @@ Search.propTypes = {
 const Table = ({ list, pattern, onDismiss }) => (
   <div className="table">
     {list.map(item => (
-      <div key={item.objectID} className="table-row">
+      <div key={item.objectID} className="table-row" id={item.objectID}>
         <span className="title">
           <a href={item.story_url}>{item.story_title}</a>
         </span>

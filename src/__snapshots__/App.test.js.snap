@@ -27,3 +27,111 @@ exports[`App has a valid snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`Button has a valid snapshot 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+  type="button"
+>
+  Click Me!
+</button>
+`;
+
+exports[`Search has a valid snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <button
+    type="submit"
+  >
+    Potato
+  </button>
+</form>
+`;
+
+exports[`Table has a valid snapshot 1`] = `
+<div
+  className="table"
+>
+  <div
+    className="table-row"
+    id="9894237"
+  >
+    <span
+      className="title"
+    >
+      <a
+        href={null}
+      />
+    </span>
+    <span
+      className="author"
+    >
+      Panoramix
+    </span>
+    <span
+      className="num_comments"
+    />
+    <span
+      className="points"
+    >
+      559
+    </span>
+    <span
+      className="button-inline"
+    >
+      <button
+        className="button-inline"
+        onClick={[Function]}
+        type="button"
+      >
+        Dismiss
+      </button>
+    </span>
+  </div>
+  <div
+    className="table-row"
+    id="17692447"
+  >
+    <span
+      className="title"
+    >
+      <a
+        href="http://news.mit.edu/2014/algorithm-recovers-speech-from-vibrations-0804"
+      >
+        Algorithm recovers speech from a potato-chip bag filmed through glass (2014)
+      </a>
+    </span>
+    <span
+      className="author"
+    >
+      MrJagil
+    </span>
+    <span
+      className="num_comments"
+    />
+    <span
+      className="points"
+    >
+      327
+    </span>
+    <span
+      className="button-inline"
+    >
+      <button
+        className="button-inline"
+        onClick={[Function]}
+        type="button"
+      >
+        Dismiss
+      </button>
+    </span>
+  </div>
+</div>
+`;
