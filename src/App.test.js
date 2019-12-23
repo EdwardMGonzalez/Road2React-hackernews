@@ -65,13 +65,15 @@ describe("Button", () => {
 });
 
 const storyTitle = "Algorithm recovers speech from a potato-chip bag filmed through glass (2014)";
+const storyUrl = "http://news.mit.edu/2014/algorithm-recovers-speech-from-vibrations-0804";
 const title = "Potato paradox";
+const url = "https://en.wikipedia.org/wiki/Potato_paradox";
 const tableProps = {
   list: [
     {
       created_at: "2015-07-15T21:37:09.000Z",
       title: title,
-      url: "https://en.wikipedia.org/wiki/Potato_paradox",
+      url: url,
       author: "Panoramix",
       points: 559,
       story_text: null,
@@ -87,8 +89,7 @@ const tableProps = {
       points: 327,
       story_text: null,
       story_title: storyTitle,
-      story_url:
-        "http://news.mit.edu/2014/algorithm-recovers-speech-from-vibrations-0804",
+      story_url: storyUrl,
       objectID: "17692447"
     }
   ],
@@ -113,13 +114,14 @@ describe("Table", () => {
     expect(element.find(".table-row").length).toBe(2);
   });
 
-  it("shows item.story_title", () => {
+  it("shows title based on item.story_title and uses item.story_url", () => {
     const element = shallow(<Table {...tableProps} />);
-    expect(element.contains(storyTitle)).toBeTruthy();
+    expect(element.containsMatchingElement(<a href={storyUrl}>{storyTitle}</a>)).toEqual(true);
   });
 
-  it("shows item.title", () => {
+  it("shows title based on item.title and uses item.url", () => {
     const element = shallow(<Table {...tableProps} />);
-    expect(element.contains(title)).toBeTruthy();
+    expect(element.containsMatchingElement(<a href={url}>{title}</a>)).toEqual(true);
   });
+
 });
