@@ -85,6 +85,7 @@ class App extends Component {
             value={searchTerm}
             onChange={this.onSearchChange}
             onSubmit={this.onSearchSubmit}
+            isLoading={isLoading}
           >
             Search
           </Search>
@@ -119,6 +120,7 @@ class App extends Component {
   }
 }
 class Search extends Component {
+
   componentDidMount() {
       if(this.input) {
         this.input.focus();
@@ -126,7 +128,7 @@ class Search extends Component {
   }
 
   render() {
-    const { onSubmit, onChange, value, children } = this.props;
+    const { onSubmit, onChange, value, isLoading, children } = this.props;
     return (
       <form onSubmit={onSubmit}>
         <input
@@ -135,7 +137,7 @@ class Search extends Component {
           value={value}
           ref={el => (this.input = el)}
         />
-        <button type="submit">{children}</button>
+        <button type="submit" disabled={isLoading} >{children}</button>
       </form>
     );
   }

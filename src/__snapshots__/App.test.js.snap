@@ -19,6 +19,7 @@ exports[`App has a valid snapshot 1`] = `
         value=""
       />
       <button
+        disabled={true}
         type="submit"
       >
         Search
